@@ -333,7 +333,7 @@ void clearqueue(coord *queue){
     }
 }
 
-/*cria uma matriz que representa o mapa e coloca 1 nas posições em que a cobra ocupa, se alguma posição for 0, o jogo não foi ganho*/
+/*cria uma matriz que representa o mapa e coloca 1 nas posiÃ§Ãµes em que a cobra ocupa, se alguma posiÃ§Ã£o for 0, o jogo nÃ£o foi ganho*/
 /*
 int hasFreeSpace (coord *snake){
     int map[HEIGHT][WIDTH];
