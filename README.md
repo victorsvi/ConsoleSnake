@@ -4,7 +4,7 @@ A Snake game thats played from the Windows console with text user interface
 
 ## Download
 
-Download the [executable file](../blob/master/bin/Snake.exe) or donwload the [source code](../blob/master/src) and try to compile it yourself.
+Download the [executable file](../master/bin/Snake.exe) or donwload the [source code](../master/src) and try to compile it yourself.
 
 ## How to Play
 
