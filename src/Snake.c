@@ -1,6 +1,25 @@
+/*
+Copyright (c) 2021 Victor Salvi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
 /**
-Made by Victor Henrique Salvi victorsvi@gmail.com
-Version 2016.08.29
+@author Victor Henrique Salvi
+@version 1.0.0
 
 Snake game played in TUI implemented with the conio2 library
 
@@ -332,33 +351,6 @@ void clearqueue(coord *queue){
         free(c);
     }
 }
-
-/*cria uma matriz que representa o mapa e coloca 1 nas posições em que a cobra ocupa, se alguma posição for 0, o jogo não foi ganho*/
-/*
-int hasFreeSpace (coord *snake){
-    int map[HEIGHT][WIDTH];
-
-    register int i;
-    register int j;
-
-    for (i=2;i<HEIGHT;i++){
-        for(j=2; j<WIDTH;j++)
-            map[i][j] = 0;
-    }
-
-    while (snake != NULL){
-        map[snake->y][snake->x] = 1;
-        snake = snake->next;
-    }
-
-    for (i=2;i<HEIGHT;i++){
-        for(j=2; j<WIDTH;j++){
-            if(map[i][j] == 0)
-                return 1;
-        }
-    }
-    return 0;
-} */
 
 int hasFreeSpace(coord *snake){
     if(snklen(snake) < MAXLEN)
